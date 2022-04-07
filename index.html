@@ -135,7 +135,7 @@ function ButtonWithHandle() {
 
 ***
 
-### DOM медленный 😕
+### Работа с DOM медленная 😕
 
 А вот JavaScript — быстрый за счет JIT-компиляции!
 
@@ -165,6 +165,10 @@ React решает одну проблему и делает это хорошо
 
 ### Вставка React на страницу
 
+```js
+import ReactDom from 'react-dom';
+```
+
 <pre><code class="lang-html hljs">&lt;div id="app"&gt;&lt;/div&gt;</code></pre>
 
 ```js
@@ -187,7 +191,7 @@ ReactDom.render(
 
 ### Элементы
 
-React-обертки для встроенного в HTML
+React-обертки для HTML-тегов
 
 **HTML**
 <pre><code class="lang-html hljs">&lt;div&gt;&lt;/div&gt; &lt;span&gt;&lt;/span&gt;</code></pre>
@@ -237,7 +241,7 @@ React-обертки для встроенного в HTML
 
 Через `{}` с возможностью вставки произвольного JS
 
-<pre><code class="lang-html hljs">&lt;input type={"text"} tabIndex={a + 5} onClick={() => alert()} /&gt;</code></pre>
+<pre><code class="lang-html hljs">&lt;input type={"text"} tabIndex={ a + 5 } onClick={() => alert()} /&gt;</code></pre>
 
 В этом случае в IDE работает подсветка и рефакторинги
 
