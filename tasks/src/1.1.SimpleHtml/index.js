@@ -23,7 +23,6 @@ import './styles.css';
  */
 
 ReactDom.render(
-  <form>
-  </form>,
+  <form></form>,
   document.getElementById('app')
 );
